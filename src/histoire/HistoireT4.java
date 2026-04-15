@@ -1,4 +1,3 @@
-//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
 package histoire;
 
 import personnages.Commercant;
