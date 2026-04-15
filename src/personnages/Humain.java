@@ -19,11 +19,11 @@ public class Humain {
 		return nbSous;
 	}
 
-	private void gagnerArgent(int gain) {
+	protected void gagnerArgent(int gain) {
 		nbSous += gain;
 	}
 	
-	private void perdreArgent(int perte) {
+	protected void perdreArgent(int perte) {
 		nbSous -= perte;
 	}
 	
@@ -45,7 +45,7 @@ public class Humain {
 		}
 	}
 	
-	private void parler(String texte) {
+	protected void parler(String texte) {
 		System.out.println("(" + nom + ") - " + texte);
 	}
 	
