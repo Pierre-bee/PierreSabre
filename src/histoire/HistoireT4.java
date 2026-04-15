@@ -11,7 +11,7 @@ public class HistoireT4 {
 		prof.boire();
 		prof.acheter("un jeu", 2);
 		prof.acheter("un kimono", 50);
-		System.out.println("");
+		System.out.println("PAS DE SECRET !!!");
 		
 		Commercant marco = new Commercant("Marco", 20);
 		marco.direBonjour();
