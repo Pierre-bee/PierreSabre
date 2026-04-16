@@ -21,7 +21,7 @@ public class Yakuza extends Humain {
 
 	public void extorquer(Commercant victime) {
 		int sousRecuperes = attaquerCommercant(victime);
-		reputation += 1;
+		reputation++;
 		gagnerArgent(sousRecuperes);
 		parler("J’ai piqué les " + sousRecuperes + " sous de Marco, ce qui me fait " + getNbSous()
 				+ " sous dans ma poche. Hi ! Hi !");
@@ -38,5 +38,10 @@ public class Yakuza extends Humain {
 		reputation--;
 		parler("J’ai perdu mon duel et mes " + getNbSous() + " sous, snif... J'ai déshonoré le clan " + clan + ".");
 		perdreArgent(getNbSous());
+	}
+	@Override
+	public void direBonjour() {
+		super.direBonjour();
+		parler("Mon clan est le clan " + clan);
 	}
 }

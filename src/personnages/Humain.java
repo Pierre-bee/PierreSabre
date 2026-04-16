@@ -55,12 +55,11 @@ public class Humain {
 		if (nbConnaissance < memoire.length) {
 			memoire[nbConnaissance] = humain;
 			nbConnaissance++;
-		}
-		else {
-			for(int i = 0; i < memoire.length-1;i++) {
-				memoire[i] = memoire[i+1];
+		} else {
+			for (int i = 0; i < memoire.length - 1; i++) {
+				memoire[i] = memoire[i + 1];
 			}
-			memoire[nbConnaissance-1] = humain;
+			memoire[nbConnaissance - 1] = humain;
 		}
 	}
 
@@ -74,15 +73,15 @@ public class Humain {
 		autreHumain.repondre(this);
 		this.memoriser(autreHumain);
 	}
-	
+
 	public void listerConnaissance() {
 		String parole = "Je connais beaucoup de monde, dont : ";
 		StringBuilder connaissances = new StringBuilder();
-		for(int i = 0; i < nbConnaissance; i++) {
+		for (int i = 0; i < nbConnaissance; i++) {
 			connaissances.append(memoire[i].getNom());
 			connaissances.append(", ");
 		}
-		connaissances.delete(connaissances.length()-2, connaissances.length());
+		connaissances.delete(connaissances.length() - 2, connaissances.length());
 		parole += connaissances.toString();
 		this.parler(parole);
 	}
