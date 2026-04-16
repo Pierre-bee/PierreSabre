@@ -22,7 +22,7 @@ public class HistoireT4 {
 		marco.boire();
 		System.out.println("");
 		
-		Yakuza yaku = new Yakuza("Yaku", "whisky", 30, "Warsong");
+		Yakuza yaku = new Yakuza("Yaku Le Noir", "whisky", 30, "Warsong");
 		yaku.direBonjour();
 		yaku.extorquer(marco);
 		System.out.println("");
@@ -32,6 +32,7 @@ public class HistoireT4 {
 		roro.donner(marco);
 		System.out.println("");
 		
+		roro.provoquer(yaku);
 		
 	}
 
